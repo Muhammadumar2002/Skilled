@@ -1,0 +1,104 @@
+:root {
+--bg-color:#fff;
+--heading-color:#13183F;
+--text-color:#83869A;
+--link-color:#F74780;
+--link-hover-color:#FFA7C3;
+--header-button-color:#13183F;
+--header-button-hover:#666CA3;
+--hero-button-color:linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+--hero-button-hover:linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+--footer-button-color: linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+--footer-buuton-hover:linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+}
+/* GLOBAL */
+html{
+  box-sizing: border-box;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing:inherit;
+}
+/* FONTS */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('../fonts/PlusJakartaSans-ExtraBold.woff2') format('woff2'),
+      url('../fonts/PlusJakartaSans-ExtraBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('../fonts/PlusJakartaSans-Bold.woff2') format('woff2'),
+      url('../fonts/PlusJakartaSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('../fonts/PlusJakartaSans-Medium.woff2') format('woff2'),
+      url('../fonts/PlusJakartaSans-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.5;
+  font-family: 'Plus Jakarta Sans' , sans-serif;
+  background-color: #fff;
+  color: var(--black);
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+/* VISUALLY-HIDDEN */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* CONTAINER */
+.container{
+  width: 100%;
+  max-width: 1150px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button{
+  display: inline-block;
+  border-radius: 28px;
+  font-family: 'Plus Jakarta Sans' sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+}
