@@ -24,8 +24,6 @@ html{
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
   box-sizing:inherit;
 }
 
@@ -67,6 +65,9 @@ body{
   font-family: 'Plus Jakarta Sans' , sans-serif;
   background-color: var(--bg-color);
   color: var(--black);
+  background-image: url("../img/Group.svg");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 563px) -144px;
 }
 
 img{
@@ -108,25 +109,24 @@ img{
 
 /* SITE-HEADER */
 .site-header {
-  display: flex;
-  margin-top: 24px;
-  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
-
 .header-wrapper {
   margin: 0;
   padding: 0;
   list-style: none;
+  align-items: center;
 }
-
-.site-header-img {
-  margin-top: 12px;
-  margin-right: 832px;
+.site-header-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header-button {
   background-color: var(--header-button-color);
-  padding: 14px 30px;
+  padding: 14px 32px;
   text-align: center;
   color: var(--bg-color);
 }
@@ -139,40 +139,47 @@ img{
 /* SITE-HERO */
 
 .hero-wrapper {
+  padding-top: 150px;
   display: flex;
+  position: relative;
 }
 
 .hero-content {
+  margin-top: 185px;
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-right: 162px;
+  margin-bottom: 250px;
 }
 
 .hero-heading {
-  margin-top: 185px;
   width: 100%;
   max-width: 457px;
   font-weight: 800;
   font-size: 56px;
   line-height: 71px;
+  margin-top: 0;
   color: var(--heading-color);
 }
 
 .hero-text {
   width: 100%;
   max-width: 445px;
-  margin-top: 29px;
   font-weight: 500;
   font-style: normal;
   Font-size: 18px;
   line-height: 28px;
   color: var(--text-color);
+  margin-bottom: 30px;
 }
 
 .hero-button {
-  margin-top: 40px;
-  padding:19px 31px 16px;
+  margin: 0;
+  padding: 0;
+  padding-top: 19px;
+  padding-left: 35px;
+  padding-bottom: 16px;
+  padding-right: 33px;
   color: var(--bg-color);
   background: var(--hero-button-color);
 }
@@ -209,10 +216,11 @@ img{
 .hero-course-time-info {
   position: absolute;
   z-index: 6;
-  top: 509px;
-  right: 33.1%;
+  top: 410px;
+  right: 286px;
   font-style: normal;
   font-weight: 700;
+  border-radius: 15px;
   font-size: 16px;
   line-height: 28px;
   background-color:var(--bg-color);
@@ -220,9 +228,10 @@ img{
 
 .hero-course-subscribe-info {
   position: absolute;
+  border-radius: 15px;
   z-index: 6;
-  top: 270px;
-  right: 282px;
+  top: 167px;
+  right: -68px;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -252,9 +261,12 @@ img{
   color: var(--heading-color);
 }
 
+.main-content {
+  flex-grow: 1;
+}
+
 /* FEATURES */
 .features {
-  margin-top: 130px;
   background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
 }
 
@@ -264,6 +276,7 @@ img{
   margin: 0;
   padding: 0;
   list-style: none;
+
 }
 
 .features-promo-item {
@@ -311,10 +324,10 @@ img{
   font-size: 24px;
   line-height: 30px;
   color: var(--heading-color);
+  margin-bottom: 24px;
 }
 
 .features__text {
-  margin-top: 24px;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
